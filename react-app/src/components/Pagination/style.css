@@ -1,0 +1,52 @@
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 0;
+  gap: 5px; /* Adds consistent spacing between buttons */
+}
+
+.paginationButton {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd; /* Added a subtle border for better contrast */
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500; /* Slightly bolder text for readability */
+  padding: 6px 12px; /* Increased padding for a better click area */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.paginationButton:hover {
+  background-color: #e6e6e6; /* Slight hover effect */
+  color: #000;
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
+.buttonActive {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid #0056b3; /* Darker border for the active button */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for prominence */
+}
+
+.buttonActive:hover {
+  background-color: #0056b3; /* Darker hover effect for the active button */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+@media (max-width: 600px) {
+  .paginationButton {
+      font-size: 14px;
+      margin: 2px; /* More compact margin for smaller screens */
+      padding: 4px 8px; /* Reduced padding for better fit */
+  }
+
+  .paginationContainer {
+      gap: 3px; /* Tighter spacing on smaller screens */
+  }
+}
